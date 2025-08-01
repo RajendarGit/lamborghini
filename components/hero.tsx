@@ -5,7 +5,9 @@ import Container from "./container";
 const Hero = () => {
   return (
     <div className="relative w-full h-[700px]">
-        <video src="/assets/images/video3.mp4" width={400} height={400} className="object-cover w-full absolute top-0 left-0" autoPlay loop></video>
+        <video src="/assets/images/video3.mp4" width={400} height={400} className="object-cover w-full absolute top-0 left-0" autoPlay loop preload="auto"
+  muted
+  playsInline />
       {/* <Image
         src="/assets/images/banner1.jpg"
         alt="Vercel Logo"
@@ -41,9 +43,18 @@ const Hero = () => {
       </div>
 
       <div className="flex gap-4 items-center justify-center h-full">
-        <video src="/assets/images/video1.mp4" width={400} height={400} className="object-contain w-[200px] rounded-2xl shadow-2xl" controls autoPlay loop></video>
-        <video src="/assets/images/video2.mp4" width={400} height={400} className="object-contain w-[200px] rounded-2xl shadow-2xl" controls autoPlay loop></video>
-        <video src="/assets/images/video3.mp4" width={400} height={400} className="object-contain w-[200px] rounded-2xl shadow-2xl" controls autoPlay loop></video>
+        <video width={400} height={400} className="object-contain w-[200px] rounded-2xl shadow-2xl" muted preload="auto" playsInline poster="/assets/images/banner1.jpg">
+          <source src="/assets/images/video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video width={400} height={400} className="object-contain w-[200px] rounded-2xl shadow-2xl" muted preload="auto" playsInline poster="/assets/images/banner2.jpg">
+          <source src="/assets/images/video2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video width={400} height={400} className="object-contain w-[200px] rounded-2xl shadow-2xl" muted preload="auto" playsInline poster="/assets/images/banner1.jpg">
+          <source src="/assets/images/video3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         {/* <Image 
           src="/assets/images/banner1.jpg"
           alt="Vercel Logo"
