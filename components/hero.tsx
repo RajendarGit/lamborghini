@@ -2,9 +2,15 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "@radix-ui/themes";
 import Container from "./container";
-import { Dialog, DialogContent, DialogTitle } from "@radix-ui/react-dialog";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogTitle,
+} from "@radix-ui/react-dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import classNames from "classnames";
+import { Cross2Icon, PlayIcon } from "@radix-ui/react-icons";
 
 const contents = [
   {
@@ -69,7 +75,7 @@ const Hero = () => {
       />
       <Container>
         <div className="relative z-10 pt-50">
-          <p className="text-4xl lg:text-[3.5rem] bg-gradient-to-r from-gray-400 to-white bg-clip-text text-transparent">
+          <p className="text-4xl lg:text-[3.5rem] bg-gradient-to-r from-gray-500 to-yellow-500 bg-clip-text text-transparent">
             Power Anywhere.
           </p>
           <p className="text-2xl lg:text-[3.5rem] text-white mb-8">
@@ -113,13 +119,14 @@ const Hero = () => {
               <div
                 key={index}
                 className={classNames(
-                  "cursor-pointer transition-all rounded-xl overflow-hidden",
+                  "cursor-pointer transition-all rounded-xl overflow-hidden relative",
                   activeIndex === index
                     ? "ring-4 ring-[#ffffff]/80 scale-105 shadow-2xl"
                     : "opacity-70 hover:opacity-100"
                 )}
                 onClick={() => handleThumbnailClick(item.video)}
               >
+                <PlayIcon className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white w-8 h-8 z-10" />
                 <video
                   className="object-cover w-[200px] h-[120px]"
                   muted
@@ -135,12 +142,16 @@ const Hero = () => {
         </div>
       </Container>
 
-      {/* Video Modal */}
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
-        <DialogContent
-          className="bg-black p-0 rounded-xl overflow-hidden max-w-3xl w-full"
-          style={{ inset: "auto", top: "auto", left: "auto", right: "auto", transform: "translateY(-50%)" }}
-        >
+        <DialogContent className="bg-black p-0 rounded-xl overflow-hidden max-w-5xl mx-auto w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
+          <DialogClose asChild>
+            <button
+              className="absolute top-4 right-4 text-white hover:text-gray-400 focus:outline-none"
+              aria-label="Close"
+            >
+              <Cross2Icon className="w-6 h-6" />
+            </button>
+          </DialogClose>
           <VisuallyHidden>
             <DialogTitle>My Dialog Title</DialogTitle>
           </VisuallyHidden>
