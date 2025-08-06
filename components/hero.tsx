@@ -75,14 +75,14 @@ const Hero = () => {
       />
       <Container>
         <div className="relative z-10 pt-50">
-          <p className="text-4xl lg:text-[3.5rem] bg-gradient-to-r from-gray-500 to-yellow-500 bg-clip-text text-transparent">
+          <p className="text-6xl lg:text-[3.5rem] bg-gradient-to-r from-gray-500 to-yellow-500 bg-clip-text text-transparent">
             Power Anywhere.
           </p>
-          <p className="text-2xl lg:text-[3.5rem] text-white mb-8">
+          <p className="text-6xl lg:text-[3.5rem] text-white mb-8">
             Instantly.
           </p>
         </div>
-        <div className="flex gap-10 justify-between items-end h-full relative z-10">
+        <div className="gap-10 justify-between items-end h-full relative z-10 hidden lg:flex">
           <div
             className="flex-1 transition-opacity duration-500"
             style={{ opacity: fade ? 1 : 0 }}

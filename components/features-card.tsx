@@ -17,7 +17,7 @@ const FeaturesCard: FC<FeaturesCardProps> = ({
   return (
     <Link
       href="/"
-      className="group border-2 border-gray-200 hover:border-theme rounded-2xl p-8 bg-white shadow-lg hover:shadow-2xl hover:shadow-amber-700 min-h-120 relative flex flex-row justify-around items-center w-1/2"
+      className="group border-2 border-gray-200 hover:border-theme rounded-2xl p-8 bg-white shadow-lg hover:shadow-2xl hover:shadow-amber-700 min-h-120 relative flex flex-row justify-around items-center md:w-1/2 mb-4 md:mb-0"
     >
       <div className="bg-gray-200 group-hover:bg-theme p-5 rounded-full absolute top-5 left-5">
         <Icon className="w-10 h-10" />

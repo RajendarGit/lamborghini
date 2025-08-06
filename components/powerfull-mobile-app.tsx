@@ -9,14 +9,14 @@ const PowerfullMobileApp = () => {
     <div className="bg-gray-100">
       <Container className="py-20">
         <SectionTtitle title="Powerfull mobile app" />
-        <div className="my-20 flex gap-10 lg:gap-50">
-          <div className="bg-gradient-to-b from-gray-400 to-yellow-800/50 w-1/2 h-auto py-20 flex justify-center items-center rounded-4xl">
+        <div className="my-20 md:flex md:gap-10 lg:gap-50">
+          <div className="bg-gradient-to-b from-gray-400 to-yellow-800/50 md:w-1/2 h-auto py-20 flex justify-center items-center rounded-4xl mb-10 md:mb-0">
             <Image
               src="/assets/images/mobile-app.png"
               alt="Mobile App Screenshot 1"
               width={400}
               height={600}
-              className="rounded-lg object-cover w-auto h-[600px]"
+              className="rounded-lg object-cover w-auto md:h-[600px]"
             />
           </div>
           <div className='flex flex-col justify-center items-start'>

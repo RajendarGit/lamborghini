@@ -21,7 +21,7 @@ const Features = () => {
             Shop Portable Kit
           </Button>
         </div>
-        <div className="flex gap-4">
+        <div className="md:flex gap-4">
             <FeaturesCard title="Solar Anywhere" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veritatis saepe repellat consequatur laborum" Icon={MixIcon} />
             <FeaturesCard title="Multiple Outputs" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veritatis saepe repellat consequatur laborum" Icon={MixerVerticalIcon} />
             <FeaturesCard title="Fast Charging" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veritatis saepe repellat consequatur laborum" Icon={DesktopIcon} />

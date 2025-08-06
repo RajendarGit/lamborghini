@@ -8,7 +8,7 @@ const Faq = () => {
     <div className="bg-gray-100">
       <Container className="py-20">
         <SectionTtitle title="Features" />
-        <div className="flex flex-row gap-10 lg:gap-20">
+        <div className="md:flex md:flex-row gap-10 lg:gap-20">
           <div className="w-full lg:w-1/2">
             <h2 className="text-6xl text-gray-500 mb-4">
               New to <span className="text-gray-800">Lamborghini?</span>{" "}
@@ -22,7 +22,7 @@ const Faq = () => {
               Visit the learning hub
             </Button>
           </div>
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 mt-20 md:mt-0">
           <FeaturesAccordion />
           </div>
         </div>

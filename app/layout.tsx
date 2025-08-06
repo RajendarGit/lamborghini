@@ -4,6 +4,7 @@ import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import Navbar from "@/components/navbar";
 import { Theme, ThemePanel } from "@radix-ui/themes";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           {/* <ThemePanel /> */}
+          <Footer />
         </Theme>
       </body>
     </html>
