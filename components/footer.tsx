@@ -50,7 +50,7 @@ const Footer = () => {
 
       <div className="mt-12 border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-white/50 gap-4">
         <span className="text-white">Enter your location</span>
-        <span>© 2025 PT Barra Cahyani... All Rights Reserved</span>
+        <span>© 2025  | Designed by Rajendar</span>
         <div className="md:flex gap-6 hidden">
           <Link href="#" className="hover:text-white">
             State contractor
