@@ -20,7 +20,7 @@ const PowerfullMobileApp = () => {
             />
           </div>
           <div className='flex flex-col justify-center items-start'>
-            <h2 className="text-6xl text-gray-500 mb-4">
+            <h2 className="text-5xl lg:text-6xl text-gray-500 mb-4">
               Built for <span className="text-gray-800">real life.</span>
             </h2>
             <p className="mb-8 text-gray-400">

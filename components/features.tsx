@@ -11,8 +11,8 @@ const Features = () => {
       <Container className="py-20">
         <SectionTtitle title="Features" />
         <div className="lg:w-1/2 mx-auto my-20">
-          <h2 className="text-6xl text-gray-500 mb-2">Built for real life.</h2>
-          <h2 className="text-6xl text-gray-900 mb-8">Families and creators.</h2>
+          <h2 className="text-5xl lg:text-6xl text-gray-500 mb-2">Built for real life.</h2>
+          <h2 className="text-5xl lg:text-6xl text-gray-900 mb-8">Families and creators.</h2>
           <p className="mb-8">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
             iste.

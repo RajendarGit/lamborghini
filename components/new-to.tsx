@@ -8,7 +8,7 @@ const NewTo = () => {
   return (
     <div className="bg-gray-900">
       <Container className="py-20">
-        <h2 className="text-6xl text-gray-500 mb-4 text-center">
+        <h2 className="text-5xl lg:text-6xl text-gray-500 mb-4 text-center">
           New to <span className="text-gray-50">Lamborghini?</span> <br />
           <span className="text-gray-50">We&apos;ve got you.</span>
         </h2>

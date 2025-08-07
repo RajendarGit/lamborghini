@@ -7,7 +7,7 @@ const Testimonials = () => {
     <>
       <Container className="py-20">
         <SectionTtitle title="Testimonials" />
-        <h2 className="text-6xl text-gray-500 mb-4 lg:w-1/2">
+        <h2 className="text-5xl lg:text-6xl text-gray-500 mb-4 lg:w-1/2">
           Trusted by adventures <span className="text-gray-800">families, and creators.</span>
         </h2>
         <p className="mb-10 text-gray-400 lg:mb-20">

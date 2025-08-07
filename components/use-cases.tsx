@@ -8,8 +8,8 @@ const UseCases = () => {
   return (
     <div className="bg-gray-100">
       <Container className="py-20">
-        <SectionTtitle title="Features" />
-        <h2 className="text-6xl text-gray-500 mb-4">
+        <SectionTtitle title="Use cases" />
+        <h2 className="text-5xl lg:text-6xl text-gray-500 mb-4">
           Built for <span className="text-gray-800">real life.</span>
         </h2>
         <p className="mb-8 text-gray-400">

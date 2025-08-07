@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         <div className="md:w-1/2">
-          <h2 className="text-6xl text-white">
+          <h2 className="text-5xl lg:text-6xl text-white">
             Power your life.
             <br />
             <span className="text-gray-400">Anywhere. Sustainably.</span>

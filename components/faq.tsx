@@ -7,10 +7,10 @@ const Faq = () => {
   return (
     <div className="bg-gray-100">
       <Container className="py-20">
-        <SectionTtitle title="Features" />
+        <SectionTtitle title="FAQ" />
         <div className="md:flex md:flex-row gap-10 lg:gap-20">
           <div className="w-full lg:w-1/2">
-            <h2 className="text-6xl text-gray-500 mb-4">
+            <h2 className="text-5xl lg:text-6xl text-gray-500 mb-4">
               New to <span className="text-gray-800">Lamborghini?</span>{" "}
               <br /><span className="text-gray-800">We&apos;ve got you.</span>
             </h2>
